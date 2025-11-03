@@ -1,0 +1,336 @@
+package com.entity.model;
+
+import com.entity.TousujianyiEntity;
+
+import com.baomidou.mybatisplus.annotations.TableName;
+import java.util.Date;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.io.Serializable;
+ 
+
+/**
+ * 投诉建议
+ * 接收传参的实体类  
+ *（实际开发中配合移动端接口开发手动去掉些没用的字段， 后端一般用entity就够用了） 
+ * 取自ModelAndView 的model名称
+ * @author 
+ * @email 
+ * @date 2024-10-14 21:59:27
+ */
+public class TousujianyiModel  implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	 			
+	/**
+	 * 课程名称
+	 */
+	
+	private String kechengmingcheng;
+		
+	/**
+	 * 封面
+	 */
+	
+	private String fengmian;
+		
+	/**
+	 * 家教账号
+	 */
+	
+	private String jiajiaozhanghao;
+		
+	/**
+	 * 家教姓名
+	 */
+	
+	private String jiajiaoxingming;
+		
+	/**
+	 * 投诉内容
+	 */
+	
+	private String tousuneirong;
+		
+	/**
+	 * 投诉时间
+	 */
+		
+	@JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat 
+	private Date tousushijian;
+		
+	/**
+	 * 学号
+	 */
+	
+	private String xuehao;
+		
+	/**
+	 * 学生姓名
+	 */
+	
+	private String xueshengxingming;
+		
+	/**
+	 * 家长账号
+	 */
+	
+	private String jiazhangzhanghao;
+		
+	/**
+	 * 家长姓名
+	 */
+	
+	private String jiazhangxingming;
+		
+	/**
+	 * 联系电话
+	 */
+	
+	private String lianxidianhua;
+		
+	/**
+	 * 是否审核
+	 */
+	
+	private String sfsh;
+		
+	/**
+	 * 审核回复
+	 */
+	
+	private String shhf;
+		
+	/**
+	 * 用户id
+	 */
+	
+	private Long userid;
+				
+	
+	/**
+	 * 设置：课程名称
+	 */
+	 
+	public void setKechengmingcheng(String kechengmingcheng) {
+		this.kechengmingcheng = kechengmingcheng;
+	}
+	
+	/**
+	 * 获取：课程名称
+	 */
+	public String getKechengmingcheng() {
+		return kechengmingcheng;
+	}
+				
+	
+	/**
+	 * 设置：封面
+	 */
+	 
+	public void setFengmian(String fengmian) {
+		this.fengmian = fengmian;
+	}
+	
+	/**
+	 * 获取：封面
+	 */
+	public String getFengmian() {
+		return fengmian;
+	}
+				
+	
+	/**
+	 * 设置：家教账号
+	 */
+	 
+	public void setJiajiaozhanghao(String jiajiaozhanghao) {
+		this.jiajiaozhanghao = jiajiaozhanghao;
+	}
+	
+	/**
+	 * 获取：家教账号
+	 */
+	public String getJiajiaozhanghao() {
+		return jiajiaozhanghao;
+	}
+				
+	
+	/**
+	 * 设置：家教姓名
+	 */
+	 
+	public void setJiajiaoxingming(String jiajiaoxingming) {
+		this.jiajiaoxingming = jiajiaoxingming;
+	}
+	
+	/**
+	 * 获取：家教姓名
+	 */
+	public String getJiajiaoxingming() {
+		return jiajiaoxingming;
+	}
+				
+	
+	/**
+	 * 设置：投诉内容
+	 */
+	 
+	public void setTousuneirong(String tousuneirong) {
+		this.tousuneirong = tousuneirong;
+	}
+	
+	/**
+	 * 获取：投诉内容
+	 */
+	public String getTousuneirong() {
+		return tousuneirong;
+	}
+				
+	
+	/**
+	 * 设置：投诉时间
+	 */
+	 
+	public void setTousushijian(Date tousushijian) {
+		this.tousushijian = tousushijian;
+	}
+	
+	/**
+	 * 获取：投诉时间
+	 */
+	public Date getTousushijian() {
+		return tousushijian;
+	}
+				
+	
+	/**
+	 * 设置：学号
+	 */
+	 
+	public void setXuehao(String xuehao) {
+		this.xuehao = xuehao;
+	}
+	
+	/**
+	 * 获取：学号
+	 */
+	public String getXuehao() {
+		return xuehao;
+	}
+				
+	
+	/**
+	 * 设置：学生姓名
+	 */
+	 
+	public void setXueshengxingming(String xueshengxingming) {
+		this.xueshengxingming = xueshengxingming;
+	}
+	
+	/**
+	 * 获取：学生姓名
+	 */
+	public String getXueshengxingming() {
+		return xueshengxingming;
+	}
+				
+	
+	/**
+	 * 设置：家长账号
+	 */
+	 
+	public void setJiazhangzhanghao(String jiazhangzhanghao) {
+		this.jiazhangzhanghao = jiazhangzhanghao;
+	}
+	
+	/**
+	 * 获取：家长账号
+	 */
+	public String getJiazhangzhanghao() {
+		return jiazhangzhanghao;
+	}
+				
+	
+	/**
+	 * 设置：家长姓名
+	 */
+	 
+	public void setJiazhangxingming(String jiazhangxingming) {
+		this.jiazhangxingming = jiazhangxingming;
+	}
+	
+	/**
+	 * 获取：家长姓名
+	 */
+	public String getJiazhangxingming() {
+		return jiazhangxingming;
+	}
+				
+	
+	/**
+	 * 设置：联系电话
+	 */
+	 
+	public void setLianxidianhua(String lianxidianhua) {
+		this.lianxidianhua = lianxidianhua;
+	}
+	
+	/**
+	 * 获取：联系电话
+	 */
+	public String getLianxidianhua() {
+		return lianxidianhua;
+	}
+				
+	
+	/**
+	 * 设置：是否审核
+	 */
+	 
+	public void setSfsh(String sfsh) {
+		this.sfsh = sfsh;
+	}
+	
+	/**
+	 * 获取：是否审核
+	 */
+	public String getSfsh() {
+		return sfsh;
+	}
+				
+	
+	/**
+	 * 设置：审核回复
+	 */
+	 
+	public void setShhf(String shhf) {
+		this.shhf = shhf;
+	}
+	
+	/**
+	 * 获取：审核回复
+	 */
+	public String getShhf() {
+		return shhf;
+	}
+				
+	
+	/**
+	 * 设置：用户id
+	 */
+	 
+	public void setUserid(Long userid) {
+		this.userid = userid;
+	}
+	
+	/**
+	 * 获取：用户id
+	 */
+	public Long getUserid() {
+		return userid;
+	}
+			
+}
